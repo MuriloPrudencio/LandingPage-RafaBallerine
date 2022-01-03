@@ -1,0 +1,165 @@
+/*Importação das fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
+/*--------------------------*/
+
+
+/*--Estilização Nav--*/
+
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 3vh;
+}
+
+.cabecalho-imagem {
+  height: 70px;
+}
+
+#cabecalho-menu, .menu{
+	display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+	gap: 20px;
+}
+
+.cabecalho-menu-item a {
+  font-family: 'Sarala', sans-serif;
+  color: #FFF2E7;
+  font-weight: 400;
+  font-size: 17px;
+	text-transform: uppercase;
+	display: block;
+}
+
+a:hover {
+	color:black;
+	opacity: 0.8;
+}
+
+/*-------------------------------------*/
+
+/*Estilização do Hamburguer*/
+
+.checkbtn {
+	font-size: 30px;
+	color: #FFF2E7;
+	float: left;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+
+#check {
+	display: none;
+}
+
+/*--------------------------------*/
+
+/*Media para responsividade do menu Formato Tablet*/
+
+@media (max-width: 952px) {
+
+	body {
+		overflow-x: hidden
+	}
+
+	.cabecalho-menu-item a  {
+		font-size: 15px;
+	}
+
+}
+
+/*Media para responsividade do menu Formato Celulares*/
+
+@media (max-width: 858px) {
+
+	body {
+		overflow-x: hidden;
+	}
+
+	.checkbtn {
+		display: block;
+	}
+
+	.menu {
+		position: absolute;
+		width: 60%;
+		height: 80vh;
+		background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+		top: 17.9vh;
+		right: -100%;
+		text-align: center;
+		transition: all 0.7s;
+	}
+	#cabecalho-menu, .menu, .cabecalho-menu-item {
+		display: flex;
+		flex-direction: column;		
+	}
+
+	.cabecalho-menu-item a {
+		font-size: 16px;
+	}
+
+	#check:checked ~ .menu  {
+		right: 0;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.menu {
+		top: 14vh;
+	}
+}
+
+@media screen and (max-width: 560px) {
+	.menu {
+		top: 17.2vh;
+	}
+}
+
+@media screen and (max-width: 411px) {
+	.menu {
+		top: 15.5vh;
+	}
+}
+
+@media  (max-width: 375px) {
+	.cabecalho {
+		padding: 2vh;
+	}
+
+	.menu {
+		top: 19vh;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.cabecalho {
+		padding: 4vh;
+	}
+
+	.menu {
+		top: 17.8vh;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.menu {
+		top: 18.4vh;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.menu {
+		top: 20vh;
+	}
+}
+
+
+
+
+/*-----------------------------------------*/

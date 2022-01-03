@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="Treinando flex box">
+
+  <!--Css para a estilização do Body, e conteudos-->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-------------------------------------------------------->
+  <!--Css para estilização da Nav e  Dropdown-->
+  <link rel="stylesheet" href="./assets/css/dropdown.css">
+  <!----------------------------------------------->
+  <!--Css para a estilização do formulário-->
+  <link rel="stylesheet" href="./assets/css/form-contato.css">
+  <!------------------------------------------------->
+ <!--Font Hamburguer-->
+  <script src=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js "></script>
+  <!-------------------------->  
+
+  <title>Refaella Ballerini</title>
+</head>
+
+<body>
+
+  <header class="cabecalho">    
+
+      <img class="cabecalho-imagem" src="./assets/img/logo.svg" alt="Logo Rafaella Ballerini" >
+
+      <nav id="cabecalho-menu">     
+
+         <!--Hamburguer menu NavBar-->
+         <input type="checkbox" id="check">
+         <label for="check" class="checkbtn">
+           <i class="fas fa-bars"></i>
+         </label>
+         <!------------------------------------->
+
+        <ul class="menu">
+        
+          <li class="cabecalho-menu-item"><a  href="./index.html">Home</a></li>
+          <li class="cabecalho-menu-item"><a  href="https://discord.gg/wagxzStdcR" target="_blank">Comunidade</a></li>
+          <li class="cabecalho-menu-item"><a   href="https://www.linkedin.com/in/rafaellaballerini/" target="_blank"> Linkedin</a></li>
+          <li class="cabecalho-menu-item"> <a   href ="https://beacons.ai/rafaballerini" target="_blank">Beacons</a></li>
+          <li class="cabecalho-menu-item"><a   href="./contato.html">Contato</a></li>
+
+        </ul>
+        
+      </nav>
+
+  </header>
+
+
+  <!--Formulario de contato-->
+
+  <main class="conteudo">
+
+    <section class="conteudo-pricipal">
+
+      <div class="conteudo-principal-contato">
+        <h1 class="conteudo-principal-contato-titulo">Contato</h1>
+        <form class="conteudo-principal-contato-form" action="https://formspree.io/f/xqknadeg"
+        method="POST">
+          <div class="conteudo-pricipal-contato-group">
+            <input type="text" class="field" id="nome" name="name" required>
+            <label for="nome" class="field-label">Nome</label>     
+          </div>
+          <div class="conteudo-pricipal-contato-group">
+            <input type="email" class="field" id="email" name="_replyto" required>
+            <label for="email" class="field-label">E-mail</label>     
+          </div>
+          <div class="conteudo-pricipal-contato-group">
+            <textarea class="field" id="mensagem" name="message" required></textarea>
+            <label for="mensagem" class="field-label">Assunto</label>     
+          </div>
+          <button  class="conteudo-pricipal-contato-button"type="submit">Enviar</button>
+        </form>
+
+      </div>
+
+    </section>
+
+  </mai>
+
+  <!----------------------------------------------->
+
+  <footer class="rodape">
+
+    <img class="rodape-imagem" src="./assets/img/ballerini.svg">
+
+  </footer>
+  
+
+ 
+
+</body>
+
+</html>

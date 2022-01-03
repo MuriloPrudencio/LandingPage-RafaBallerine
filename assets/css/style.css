@@ -1,0 +1,169 @@
+/*Importação das fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
+/*--------------------------*/
+
+/*Resetando algumas propriedados do Browser*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+/*--------*/
+
+
+/*Estilização do Body*/
+body {
+  font-size: 100%;
+  background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+  overflow-x: hidden;
+}
+/*-----------------------*/
+
+/*Conteudo principal*/
+
+.conteudo {
+  margin-bottom: 5rem;
+  border-top: 1px solid #FFF2E7;
+}
+
+.conteudo-pricipal {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 5rem;
+}
+
+.conteudo-principal-escrito{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.conteudo-principal-escrito-titulo {
+  font-family: 'Righteous', cursive;
+  color:#FFF2E7;
+  font-weight: 400;
+  font-size: 60px;
+}
+
+.conteudo-principal-escrito-subtitulo {
+  font-family: 'Sarala', sans-serif;
+  color: #ECD6C4;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.conteudo-principal-escrito-button {
+  width: 150px;
+  height: 50px;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+  background: #ECD6C4;
+  cursor: pointer;
+}
+
+.conteudo-principal-escrito-button a {
+  color: #8E5D52;
+  font-weight: 300;
+  font-family: 'Sarala', sans-serif;
+}
+
+.conteudo-pricipal-imagem {
+  border-radius: 50%;
+  max-width: 300px;
+}
+
+/*------------------------------*/
+
+/*Apresentação*/
+
+.apresentacao {
+  margin-top: 5rem;
+}
+
+.apresentacao-principal {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 5%;
+}
+
+.apresentacao-principal-titulo {
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+  color: #FFF2E7;
+  font-size: 40px;
+  border-top: 1px solid #FFF2E7;
+  font-weight: 400;
+}
+
+.apresentacao-principal-paragrafo {
+  text-indent: 1.5em;
+  font-family: 'Sarala', sans-serif;
+  font-size: max(18px, 1.3vw);
+  color: #ECD6C4;
+  font-weight: 300;
+}
+
+/*-------------------------*/
+
+/*Footer*/
+
+.rodape {
+  padding-top: 3rem;
+  border-top: 0.4px solid #FFF2E7;
+  height: 20px;
+}
+
+.rodape-imagem {
+height: 48px;
+display: block;
+margin: 0 auto;
+}
+
+/*----------------------------------*/
+
+/*Responsividade*/
+
+/*Tablet*/
+@media (max-width: 960px) {
+  .conteudo-pricipal-imagem {
+    display: none;
+  }
+}
+
+/*----*/
+
+/*Celulares*/
+
+@media (max-width: 860px) {
+
+  .conteudo-principal-escrito {
+    align-items: center;
+  }
+
+  .conteudo-principal-escrito-titulo {
+    font-size: 40px;
+  }
+
+  .conteudo-principal-escrito-subtitulo {
+    font-size: 18px;
+    padding-left: 3%;
+    text-indent: 1.5em;
+  }
+  
+  .apresentacao-principal-titulo {
+    font-size: 30px;
+  }
+
+  .apresentacao-principal-paragrafo {
+    font-size: 16px;
+  }
+
+}
+
+/*-------*/

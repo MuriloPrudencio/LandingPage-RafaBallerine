@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
+
+
+/*Estilização formulario*/
+
+.conteudo-principal-contato {
+  width: 50%;
+  height: 100vh;
+  background-color: #FFF2E7;
+  margin-bottom: 5rem;
+  border-radius: 10px;  
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.5);
+}
+
+.conteudo-principal-contato-titulo {
+  text-align: center;
+  padding-top: 2rem;
+  width: 100%;
+  font-family:  'Righteous', cursive;
+  font-weight: lighter;
+  font-size: 25px;
+  color: #8E5D52;
+}
+
+.conteudo-principal-contato-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.5rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+.conteudo-pricipal-contato-group {
+  position: relative;
+}
+
+.conteudo-pricipal-contato-group textarea {
+  max-width: 30rem;
+  max-height: 10rem;
+ height: 10rem;
+}
+
+.field {
+
+  background: transparent;
+  border: none;
+  width: 25rem;
+  font-size: 1.2rem;
+  font-family: 'Sarala', sans-serif;
+  border-bottom: 1px solid #1f1e1e;
+  height: 2rem;
+  outline: none;
+  margin: 2rem 0;
+}
+
+.field-label {
+  position: absolute;
+  left: 0;
+  font-family: 'Sarala', sans-serif;
+  text-transform: uppercase;
+  color: #8E5D52;
+}
+
+.field:focus {
+  border-bottom: 1.5px solid #69463e;
+}
+
+.conteudo-pricipal-contato-button {
+  width: 150px;
+  height: 50px;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+  background: #ECD6C4;
+  cursor: pointer;
+  font-family:  'Righteous', cursive;
+  font-size: 18px;
+  color: #8E5D52;
+}
+
+/*----------------------------------*/
+/*Responsividade*/
+
+/*Configuração celular*/
+
+@media (max-width:860px) {
+  .conteudo-principal-contato {
+    width: 75%;
+    height: 100vh;
+  }
+
+  .field {
+    width: 100%;
+  }
+}
+
+/*---------------------*/
